@@ -8,10 +8,52 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box} :root{--bg:#0c0f18;--panel:rgba(255,255,255,.065);--line:rgba(255,255,255,.105);--text:#f4f5fb;--muted:#9ca3b8;--accent:#a99bff;--accent2:#75d9df}body{margin:0;background:radial-gradient(ellipse at 70% 0%,#20213a 0%,#10131e 42%,#0b0e16 100%);color:var(--text);font-family:"DM Sans",sans-serif;min-height:100vh;overflow-x:hidden}.ambient{position:fixed;border-radius:50%;filter:blur(100px);opacity:.18;pointer-events:none;z-index:-1}.a1{width:360px;height:360px;background:#7666ff;top:5%;right:8%}.a2{width:300px;height:300px;background:#42bdc9;bottom:5%;left:30%}.glass{background:linear-gradient(135deg,rgba(255,255,255,.105),rgba(255,255,255,.035));border:1px solid var(--line);box-shadow:0 18px 55px rgba(0,0,0,.18),inset 0 1px rgba(255,255,255,.08);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}.sidebar{position:fixed;z-index:10;left:18px;top:18px;bottom:18px;width:218px;border-radius:24px;padding:22px 14px;display:flex;flex-direction:column;transition:width .35s cubic-bezier(.2,.8,.2,1)}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--text);padding:2px 10px 28px;font:800 20px Manrope}.brand-mark{width:34px;height:34px;border-radius:12px;background:linear-gradient(145deg,#b9aaff,#6e7df4);display:grid;place-items:center;color:#101321;box-shadow:0 6px 22px #8f81ff55}.brand-name span{color:#b9adff}.nav-label,.eyebrow{font-size:10px;letter-spacing:1.7px;color:#929ab2;font-weight:700}.nav-label{padding:0 12px 10px}nav{display:grid;gap:6px}.nav-item,.admin-shortcut{border:0;background:transparent;color:#aeb4c8;display:flex;align-items:center;gap:14px;padding:12px;border-radius:13px;text-align:left;font:600 13px "DM Sans";cursor:pointer;transition:.25s}.nav-item:hover,.admin-shortcut:hover{background:#ffffff0d;color:white;transform:translateX(2px)}.nav-item.active{background:linear-gradient(100deg,#a89aff27,#8c9eff0d);color:#e9e5ff;box-shadow:inset 2px 0 #b5aaff}.ico{font-size:21px;width:24px;text-align:center;line-height:1}.sidebar-bottom{margin-top:auto}.mini-status{display:flex;align-items:center;gap:10px;padding:12px;color:#8790a8;font-size:11px}.status-dot,.pulse{width:7px;height:7px;background:#6ce0b2;border-radius:50%;box-shadow:0 0 12px #6ce0b2}.admin-shortcut{width:100%;border-top:1px solid var(--line);border-radius:0;padding-top:17px}.main{margin-left:254px;padding:28px 42px 18px;max-width:1600px}.topbar{height:54px;display:flex;align-items:center;justify-content:space-between;margin-bottom:26px}.top-title{font:700 20px Manrope;margin-top:3px}.top-right{display:flex;align-items:center;gap:16px}.date-chip{color:#aeb4c8;font-size:12px}.avatar-mini{width:38px;height:38px;padding:2px;border:1px solid #ffffff33;border-radius:50%;background:#ffffff12;overflow:hidden;cursor:pointer}.avatar-mini img{width:100%;height:100%;object-fit:cover;border-radius:50%}.page{display:none;animation:pageIn .48s cubic-bezier(.2,.8,.2,1) both}.page.active{display:block}@keyframes pageIn{from{opacity:0;transform:translateY(12px) scale(.995);filter:blur(4px)}to{opacity:1;transform:none;filter:blur(0)}}.hero{border-radius:28px;min-height:340px;padding:42px 48px;display:flex;position:relative;overflow:hidden}.hero-copy{position:relative;z-index:2;max-width:54%}.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid #ffffff1b;border-radius:30px;background:#ffffff0a;color:#c9c2ff;font-size:9px;font-weight:700;letter-spacing:1.1px}.hero h1,.donate-copy h2{font:800 clamp(34px,4vw,54px)/1.1 Manrope;letter-spacing:-2px;margin:18px 0 12px}.hero h1 em,.donate-copy h2 em{font-style:normal;color:#b7aaff}.hero p,.page-intro p,.donate-copy p{color:#aab1c4;line-height:1.75;font-size:13px;max-width:450px}.primary{border:0;border-radius:13px;padding:13px 17px;background:linear-gradient(110deg,#b7aaff,#8e9eff);color:#17172b;font:700 12px "DM Sans";cursor:pointer;box-shadow:0 8px 26px #9c8fff33;transition:.25s}.primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px #9c8fff55}.primary span{margin-left:14px;font-size:16px}.hero-art{position:absolute;right:5%;top:0;width:42%;height:100%;display:grid;place-items:center}.orb{position:absolute;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#a9a0ff88,#6478cf25 55%,transparent 70%);filter:blur(8px)}.book{position:absolute;width:145px;height:205px;border-radius:8px 16px 16px 8px;box-shadow:18px 22px 45px #0008}.book-back{transform:translate(35px,5px) rotate(13deg);background:linear-gradient(140deg,#59b8c1,#263b69)}.book-front{transform:translate(-18px,-4px) rotate(-8deg);background:linear-gradient(145deg,#b9adff,#646cbb 70%,#333b71);border-left:7px solid #e4dcff;display:flex;flex-direction:column;justify-content:center;padding:20px;color:#17172e;font:800 21px Manrope;letter-spacing:1px}.book-front b{font-size:35px}.book-front small{font:700 7px "DM Sans";letter-spacing:1.4px;margin-top:20px}.book-lines{position:absolute;top:18px;left:20px;width:35px;height:2px;background:#ffffff99}.spark{position:absolute;color:#e3dfff;font-size:28px}.s1{right:18%;top:25%}.s2{left:12%;bottom:24%}.section-head{display:flex;align-items:end;justify-content:space-between;margin:30px 2px 15px}.section-head h2,.page-intro h1{font:700 22px Manrope;margin:6px 0 0;letter-spacing:-.6px}.text-btn{background:none;border:0;color:#c1b8ff;font:600 12px "DM Sans";cursor:pointer}.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.quick-card{border-radius:18px;padding:18px;text-align:left;color:var(--text);position:relative;cursor:pointer;transition:.25s}.quick-card:hover{transform:translateY(-4px);background:#ffffff12}.quick-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;font-size:22px;margin-bottom:15px}.violet{background:#a99bff25;color:#c1b6ff}.blue{background:#69c8e525;color:#86d9ec}.pink{background:#ec92c525;color:#f5a9d7}.quick-card b{display:block;font:700 13px Manrope}.quick-card small{display:block;color:#969eb4;margin-top:5px;font-size:11px}.quick-arrow{position:absolute;right:17px;top:17px;color:#9ea6bb}.muted{color:#929bb1;font-size:11px}.book-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.book-card{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#ffffff08;transition:.25s}.book-card:hover{transform:translateY(-4px);border-color:#b8aaff66}.cover{height:150px;background:linear-gradient(145deg,#545e9e,#222b4b);display:grid;place-items:center;position:relative;overflow:hidden}.cover img{width:100%;height:100%;object-fit:cover}.cover-placeholder{font:800 25px Manrope;color:#ffffff80}.book-info{padding:13px}.book-info b{display:block;font:700 12px Manrope;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.book-info small{display:block;color:#9ca4b9;margin:6px 0 10px;font-size:10px}.book-link{display:inline-block;color:#c3b9ff;font-size:10px;text-decoration:none}.page-intro{margin:12px 2px 24px}.page-intro h1{font-size:30px;margin:8px 0}.page-intro p{margin:0}.toolbar,.big-search{border-radius:15px;padding:13px 17px;display:flex;align-items:center;gap:12px;margin-bottom:20px}.toolbar input,.big-search input{background:none;border:0;outline:0;color:white;flex:1;font:13px "DM Sans";min-width:0}.toolbar input::placeholder,.big-search input::placeholder{color:#777f96}.search-symbol,.big-search span{font-size:23px;color:#b9adff}.big-search{padding:19px 22px}.big-search input{font-size:16px}.empty{padding:28px;text-align:center;color:#929bb1;font-size:12px;border:1px dashed #ffffff20;border-radius:16px}.hidden{display:none!important}.profile-card{max-width:760px;border-radius:24px;overflow:hidden;position:relative;padding-bottom:28px}.profile-cover{height:155px;background:radial-gradient(ellipse at 20% 20%,#b2a6ff88,transparent 55%),linear-gradient(110deg,#242a51,#273b55,#171c31)}.profile-photo{position:absolute;top:95px;left:30px;width:118px;height:118px;border-radius:25px;object-fit:cover;border:4px solid #20243a;box-shadow:0 10px 30px #0008}.profile-content{padding:72px 30px 0}.profile-content h2{font:800 23px Manrope;letter-spacing:.3px;margin:12px 0 5px}.profile-meta{color:#a8b0c6;font-size:12px;margin:5px 0}.profile-content p{max-width:610px;color:#b0b7ca;font-size:13px;line-height:1.8;margin:20px 0}.socials{display:flex;flex-wrap:wrap;gap:9px}.socials a{padding:10px 13px;border:1px solid var(--line);border-radius:12px;color:#d7d3ff;text-decoration:none;font-size:11px}.socials a span{margin-left:8px}.donate-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;max-width:900px}.donate-copy,.qr-card{border-radius:22px;padding:28px}.donate-icon{width:45px;height:45px;border-radius:14px;background:#e99bd522;color:#f4a7d9;display:grid;place-items:center;font-size:25px}.donate-copy h2{font-size:31px;letter-spacing:-1px}.thanks{border-top:1px solid var(--line);padding-top:18px;margin-top:25px;color:#c2baff;font-size:11px}.qr-head{display:flex;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:1px}.qr-image{display:block;width:min(100%,280px);margin:20px auto 12px;border-radius:12px;background:white}.qr-caption{text-align:center;color:#a3abc0;font-size:10px;line-height:1.6}.settings-list{max-width:760px;border-radius:20px;padding:5px 20px}.setting-row{display:flex;align-items:center;justify-content:space-between;padding:20px 3px;border-bottom:1px solid var(--line);gap:15px}.setting-row:last-child{border:0}.setting-row b,.setting-row small{display:block}.setting-row b{font-size:13px}.setting-row small{color:#939cb2;font-size:11px;margin-top:5px}.setting-tag{font-size:10px;color:#c5bdff;padding:7px 10px;border-radius:20px;background:#a99bff1b}.outline{background:#ffffff0b;border:1px solid var(--line);border-radius:10px;padding:9px 12px;color:#ddd9ff;font:600 11px "DM Sans";cursor:pointer}footer{display:flex;justify-content:space-between;color:#747d94;font-size:10px;padding:35px 2px 8px}footer span{color:#687188}.modal-backdrop{position:fixed;z-index:30;inset:0;background:#060811bb;backdrop-filter:blur(10px);display:grid;place-items:center;padding:18px}.modal{width:min(100%,420px);border-radius:22px;padding:30px;position:relative}.modal h2{font:800 25px Manrope;margin:8px 0}.modal p,.modal-note{color:#9fa7bb;font-size:12px;line-height:1.6}.modal-close{position:absolute;right:18px;top:14px;border:0;background:none;color:white;font-size:25px;cursor:pointer}.modal label,.admin-form label{display:block;color:#c4c9d8;font-size:11px;margin:14px 0}.modal input,.admin-form input{display:block;width:100%;margin-top:7px;padding:12px;border:1px solid var(--line);border-radius:10px;background:#080c18aa;color:white;outline:0}.full{width:100%;margin-top:10px}.modal-note{display:block;margin-top:14px;font-size:10px}.admin-panel{position:fixed;z-index:20;inset:0 0 0 auto;width:min(470px,100%);overflow:auto;padding:25px;background:#111522f5;border-left:1px solid var(--line);box-shadow:-20px 0 60px #0008;animation:slideIn .35s ease}@keyframes slideIn{from{transform:translateX(30px);opacity:0}to{transform:none;opacity:1}}.admin-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.admin-head h2{font:800 23px Manrope;margin:5px 0}.admin-form,.admin-book-list{padding:20px;border-radius:18px;margin-bottom:16px}.admin-form h3,.admin-book-list h3{font:700 14px Manrope;margin:0 0 15px}.admin-form label{margin:12px 0}.admin-row{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);gap:10px}.admin-row b{font-size:11px}.admin-row a{color:#bdb3ff;font-size:10px}.danger{border:1px solid #ff858544;background:#ff858511;color:#ffaaaa;border-radius:8px;padding:7px 9px;font-size:10px}.toast{position:fixed;z-index:50;bottom:25px;left:50%;transform:translate(-50%,20px);opacity:0;background:#e7e4ff;color:#17172b;padding:11px 17px;border-radius:12px;font-size:12px;transition:.25s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}@media(max-width:900px){.sidebar{width:72px;padding:18px 9px}.brand{padding:2px 9px 28px}.brand-name,.nav-label,.nav-text{display:none}.nav-item,.admin-shortcut{justify-content:center;padding:13px 8px}.mini-status{justify-content:center}.main{margin-left:104px;padding:24px 25px 15px}.book-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:620px){.sidebar{left:9px;top:9px;bottom:9px;width:58px;border-radius:18px;padding:14px 6px}.brand{padding:3px 5px 25px}.brand-mark{width:34px;height:34px}.nav-item{padding:12px 5px}.ico{font-size:19px}.main{margin-left:76px;padding:18px 14px 12px}.topbar{margin-bottom:18px}.date-chip{display:none}.hero{padding:26px 22px;min-height:390px;display:block}.hero-copy{max-width:100%}.hero h1{font-size:38px}.hero p{max-width:95%;font-size:12px}.hero-art{right:0;bottom:-20px;top:auto;width:100%;height:180px;opacity:.8}.orb{width:180px;height:180px}.book{transform:scale(.7)}.book-front{transform:translate(-15px,-2px) rotate(-8deg) scale(.78)}.book-back{transform:translate(35px,5px) rotate(13deg) scale(.78)}.quick-grid{grid-template-columns:1fr;gap:9px}.quick-card{padding:13px 14px 13px 62px;min-height:62px}.quick-icon{position:absolute;left:13px;top:12px;margin:0;width:36px;height:36px}.quick-card b{padding-top:3px}.quick-arrow{top:23px}.section-head{margin-top:23px}.section-head h2{font-size:17px}.book-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.cover{height:120px}.book-info{padding:10px}.book-info b{font-size:11px}.page-intro h1{font-size:26px}.profile-photo{width:95px;height:95px;top:108px;left:20px}.profile-content{padding:67px 20px 0}.profile-content h2{font-size:19px}.donate-layout{grid-template-columns:1fr}.donate-copy,.qr-card{padding:21px}.setting-row{align-items:flex-start}.setting-row .outline{white-space:nowrap}footer{display:block;line-height:2}footer span{display:block}.admin-panel{padding:18px}.top-title{font-size:18px}}
+
+/* ===== PUSTAKAKU / MIXED IMMERSIVE 2026 ===== */
+:root{--accent:#b7a6ff;--accent2:#69e2dc;--hot:#ff9acb;--surface:rgba(13,18,34,.72)}
+body{background:#080b14;background-image:radial-gradient(ellipse at 78% 4%,rgba(91,76,190,.30),transparent 34%),radial-gradient(ellipse at 10% 42%,rgba(27,159,166,.14),transparent 32%),linear-gradient(135deg,#080b14 0%,#101426 52%,#090d17 100%);background-attachment:fixed}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.17;background-image:linear-gradient(rgba(172,185,255,.075) 1px,transparent 1px),linear-gradient(90deg,rgba(172,185,255,.075) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(to bottom,black,transparent 82%)}
+body:after{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opacity:.11;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E")}
+.ambient{opacity:.26;filter:blur(115px);animation:ambientDrift 16s ease-in-out infinite alternate}.a2{animation-delay:-8s}@keyframes ambientDrift{to{transform:translate3d(34px,-26px,0) scale(1.12)}}
+.sidebar{background:linear-gradient(160deg,rgba(21,27,49,.86),rgba(11,15,27,.82));border:1px solid rgba(190,190,255,.15);box-shadow:0 24px 80px #0007,inset 0 1px #ffffff12}.brand-mark{background:linear-gradient(140deg,#c8bcff,#62dedb 85%);box-shadow:0 0 30px #9d8aff55}.brand-name span{background:linear-gradient(90deg,#c8baff,#75e4df);background-clip:text;-webkit-background-clip:text;color:transparent}
+.nav-item.active{background:linear-gradient(100deg,rgba(174,151,255,.22),rgba(82,216,213,.08));box-shadow:inset 2px 0 #b7a6ff,0 8px 24px #0002}.nav-item:hover{background:rgba(255,255,255,.075)}
+.main{max-width:1720px}.topbar{position:relative}.topbar:after{content:"";position:absolute;bottom:-13px;left:0;right:0;height:1px;background:linear-gradient(90deg,rgba(178,164,255,.28),rgba(103,224,220,.12),transparent)}
+.hero{min-height:430px;padding:clamp(30px,5vw,66px);border:1px solid rgba(185,174,255,.22);background:linear-gradient(115deg,rgba(27,32,59,.92),rgba(15,25,43,.72) 55%,rgba(25,36,62,.68));box-shadow:0 30px 100px #0005,inset 0 1px #ffffff18;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 78% 50%,rgba(105,226,220,.19),transparent 34%),radial-gradient(ellipse at 92% 8%,rgba(180,151,255,.22),transparent 38%)}
+.hero:after{content:"";position:absolute;right:0;top:0;width:58%;height:100%;z-index:-1;opacity:.36;background:linear-gradient(135deg,transparent 35%,rgba(255,255,255,.06) 35.2%,transparent 35.7%),linear-gradient(45deg,transparent 54%,rgba(110,218,222,.11) 54.2%,transparent 54.7%);mask-image:linear-gradient(90deg,transparent,black)}
+.hero-copy{max-width:58%}.hero h1{font-size:clamp(42px,5.5vw,76px);line-height:.99;letter-spacing:-3.8px;text-wrap:balance}.hero h1 em{background:linear-gradient(95deg,#c7b7ff 8%,#7be6df 65%,#ffb1d7);background-clip:text;-webkit-background-clip:text;color:transparent}.hero p{font-size:14px;max-width:430px}.pill{background:rgba(255,255,255,.055);border-color:rgba(197,185,255,.25);backdrop-filter:blur(14px)}
+.hero-art{right:2%;width:46%;perspective:1000px}.orb{width:330px;height:330px;background:radial-gradient(circle at 38% 34%,rgba(134,229,226,.42),rgba(125,103,220,.25) 40%,transparent 70%);filter:blur(13px);animation:orbPulse 7s ease-in-out infinite alternate}@keyframes orbPulse{to{transform:scale(1.16);opacity:.75}}
+.book{width:170px;height:238px;border-radius:7px 17px 17px 7px;box-shadow:24px 30px 65px #0009;transform-style:preserve-3d}.book-front{background:linear-gradient(145deg,#d4caff 0%,#9384e5 48%,#394b82 100%);border-left:8px solid #e8e1ff;box-shadow:inset -12px 0 20px #1c244955,24px 30px 65px #0009;animation:bookFloat 6s ease-in-out infinite}.book-back{background:linear-gradient(140deg,#72e1d9,#1c526b 70%,#1a294c);animation:bookFloatBack 7s ease-in-out infinite}.book-front:after{content:"";position:absolute;inset:0 0 0 auto;width:9px;background:linear-gradient(90deg,#ffffff66,#10152c66);border-radius:0 14px 14px 0}.book-front span{font-size:23px}.book-front b{font-size:48px}.spark{color:#b7fff4;text-shadow:0 0 22px #7be8df;animation:sparkle 3s ease-in-out infinite alternate}.s2{animation-delay:-1.4s}@keyframes bookFloat{0%,100%{transform:translate(-18px,-4px) rotateY(-17deg) rotateZ(-8deg)}50%{transform:translate(-18px,-22px) rotateY(-7deg) rotateZ(-3deg)}}@keyframes bookFloatBack{0%,100%{transform:translate(42px,9px) rotateY(18deg) rotateZ(13deg)}50%{transform:translate(42px,-9px) rotateY(8deg) rotateZ(8deg)}}@keyframes sparkle{to{opacity:.35;transform:translateY(-9px) scale(.8)}}
+.quick-card,.book-card,.settings-list,.profile-card,.donate-copy,.qr-card,.toolbar,.big-search{border-color:rgba(177,176,255,.15);box-shadow:0 16px 48px rgba(0,0,0,.15),inset 0 1px rgba(255,255,255,.055)}.quick-card{background:linear-gradient(140deg,rgba(255,255,255,.075),rgba(255,255,255,.025));overflow:hidden}.quick-card:after{content:"";position:absolute;width:120px;height:120px;right:-65px;bottom:-75px;border-radius:50%;background:rgba(115,225,220,.12);filter:blur(4px);transition:.4s}.quick-card:hover:after{transform:scale(1.8)}
+.book-card{background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));transform-style:preserve-3d}.book-card:hover{transform:translateY(-7px) rotateX(2deg);border-color:rgba(126,224,220,.48);box-shadow:0 22px 48px #0005,0 0 25px rgba(120,218,220,.08)}.cover{background:radial-gradient(circle at 25% 20%,#8d80cf,#263653 72%)}.cover:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(125deg,rgba(255,255,255,.18),transparent 36%,rgba(5,10,25,.2))}.book-info{background:rgba(10,15,28,.25)}.book-link{color:#8de6df}
+.page-intro h1{font-size:clamp(30px,4vw,44px);letter-spacing:-1.8px}.eyebrow{color:#9bdedc}.primary{background:linear-gradient(105deg,#c4b4ff,#7be0dc);box-shadow:0 9px 30px rgba(126,211,220,.18)}.primary:hover{box-shadow:0 13px 38px rgba(126,211,220,.32)}.text-btn,.book-link{color:#9de5e2}
+.admin-panel{background:linear-gradient(155deg,rgba(17,22,41,.985),rgba(9,14,27,.99));border-left:1px solid rgba(177,176,255,.22);box-shadow:-28px 0 90px #0009}.admin-form,.admin-book-list{background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));border:1px solid rgba(177,176,255,.15);box-shadow:inset 0 1px #ffffff0c}.admin-panel input:focus,.modal input:focus{border-color:#83dfdc;box-shadow:0 0 0 3px rgba(105,226,220,.12)}.admin-panel input[type=file]{padding:12px;background:rgba(98,218,215,.055);border:1px dashed rgba(117,224,220,.35)}.admin-panel input[type=file]::file-selector-button{border:0;border-radius:8px;padding:9px 12px;margin-right:12px;background:linear-gradient(110deg,#c2b3ff,#75dedb);color:#11182a;font-weight:700;cursor:pointer}.admin-row{border-color:rgba(255,255,255,.1)}.admin-row a{color:#8ee6e0}.danger{background:rgba(255,113,150,.09);border-color:rgba(255,133,170,.3)}
+.modal{background:linear-gradient(145deg,rgba(28,33,59,.98),rgba(10,15,29,.98));border:1px solid rgba(185,174,255,.25);box-shadow:0 30px 100px #000a}.modal-backdrop{background:rgba(3,6,15,.78)}
+.toast{background:linear-gradient(100deg,#d6caff,#a1eee6);box-shadow:0 12px 40px #0006}
+.reveal-ready{opacity:0;transform:translateY(22px);transition:opacity .75s cubic-bezier(.2,.8,.2,1),transform .75s cubic-bezier(.2,.8,.2,1)}.reveal-ready.is-visible{opacity:1;transform:none}.book-card.reveal-ready{transition:opacity .65s ease,transform .65s cubic-bezier(.2,.8,.2,1),border-color .25s,box-shadow .25s}.quick-card,.book-card,.primary,.nav-item,.outline,.text-btn{will-change:transform}
+@media(max-width:900px){.hero{min-height:390px}.hero h1{font-size:clamp(38px,6vw,58px)}}
+@media(max-width:620px){body:before{background-size:38px 38px}.hero{min-height:470px;padding:27px 22px}.hero-copy{max-width:100%}.hero h1{font-size:42px;letter-spacing:-2.4px}.hero p{font-size:12px}.hero-art{height:215px;bottom:-4px;opacity:.92}.orb{width:220px;height:220px}.book{width:130px;height:180px}.book-front{transform:translate(-15px,-2px) rotate(-8deg) scale(.82)}.book-back{transform:translate(35px,5px) rotate(13deg) scale(.82)}.book-front b{font-size:39px}.admin-panel{padding:16px}.page-intro h1{font-size:29px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal-ready{opacity:1;transform:none}}
+
+
+/* ===== TRUE 3D LIBRARY VISUALS (Three.js / WebGL) ===== */
+.three-visual{position:fixed;z-index:1;right:1.4vw;top:17vh;width:min(34vw,430px);height:390px;pointer-events:none;opacity:.96;filter:drop-shadow(0 22px 45px rgba(0,0,0,.34));transition:opacity .35s ease,transform .6s ease}
+.three-visual canvas{display:block;width:100%;height:100%;outline:0}
+.three-caption{position:absolute;right:7%;bottom:5%;font-size:9px;letter-spacing:2.2px;color:rgba(190,224,255,.52);font-weight:800;text-shadow:0 0 18px rgba(105,226,220,.45)}
+.main,.sidebar{position:relative;z-index:2}
+.hero{overflow:hidden}
+.page{position:relative}
+.admin-panel{z-index:8}
+.modal-backdrop{z-index:20}
+@media(max-width:900px){.three-visual{right:-4vw;top:16vh;width:300px;height:285px;opacity:.56}}
+@media(max-width:620px){.three-visual{right:-8vw;top:13vh;width:220px;height:220px;opacity:.35}.three-caption{font-size:7px;letter-spacing:1.2px}}
+@media(prefers-reduced-motion:reduce){.three-visual{opacity:.35}}
+
 </style>
 </head>
 <body>
 <div class="ambient a1"></div><div class="ambient a2"></div>
+<div id="threeVisual" class="three-visual" aria-hidden="true"><canvas id="threeCanvas"></canvas><div class="three-caption" id="threeCaption">PUSTAKAKU · 3D LIBRARY</div></div>
 <aside class="sidebar glass">
   <a class="brand" href="#" aria-label="PustakaKu"><span class="brand-mark">P</span><span class="brand-name">Pustaka<span>Ku</span></span></a>
   <div class="nav-label">MENU</div>
@@ -41,9 +83,23 @@
 <footer>© 2026 PustakaKu <span>Dirancang untuk berbagi pengetahuan.</span></footer>
 </main>
 <div class="modal-backdrop hidden" id="adminModal"><div class="modal glass"><button class="modal-close" id="closeAdmin">×</button><div class="eyebrow">AREA KHUSUS</div><h2>Administrator</h2><p>Masuk menggunakan akun administrator PustakaKu.</p><label>Email administrator<input id="adminEmail" type="email" autocomplete="username" placeholder="admin@email.com" required></label><label>Kata sandi<input id="adminPassword" type="password" autocomplete="current-password" placeholder="Kata sandi akun Supabase" required></label><button class="primary full" id="adminLogin">Masuk <span>→</span></button><small class="modal-note">Akses hanya diberikan kepada akun yang terdaftar sebagai administrator.</small></div></div>
-<div class="admin-panel hidden" id="adminPanel"><div class="admin-head"><div><div class="eyebrow">PANEL PENGELOLA</div><h2>Kelola katalog</h2></div><button id="adminLogout" class="outline">Keluar</button></div><form id="bookForm" class="admin-form glass"><h3>Tambah buku</h3><label>Judul buku<input id="bookTitle" required placeholder="Contoh: Pengantar Teknologi Pendidikan"></label><label>Penulis<input id="bookAuthor" placeholder="Nama penulis"></label><label>URL buku<input id="bookUrl" type="url" placeholder="https://..." required></label><label>Cover buku (opsional)<input id="bookCover" type="url" placeholder="https://..."></label><button class="primary full">Tambah ke katalog <span>＋</span></button></form><div class="admin-book-list glass"><h3>Daftar buku</h3><div id="adminBooks"></div></div></div>
+<div class="admin-panel hidden" id="adminPanel"><div class="admin-head"><div><div class="eyebrow">PANEL PENGELOLA</div><h2>Kelola katalog</h2></div><button id="adminLogout" class="outline">Keluar</button></div><form id="bookForm" class="admin-form glass"><h3>Tambah buku</h3><label>Judul buku<input id="bookTitle" required placeholder="Contoh: Pengantar Teknologi Pendidikan"></label><label>Penulis<input id="bookAuthor" placeholder="Nama penulis"></label><label>URL buku (opsional jika upload PDF)<input id="bookUrl" type="url" placeholder="https://..."></label><label>Upload file PDF (opsional jika menggunakan URL)<input id="bookFile" type="file" accept="application/pdf,.pdf"><small class="modal-note">Pilih salah satu: URL buku atau file PDF. Maksimal 50 MB.</small></label><label>Cover buku (opsional)<input id="bookCover" type="url" placeholder="https://..."></label><button class="primary full" id="addBookButton">Tambah ke katalog <span>＋</span></button></form><div class="admin-book-list glass"><h3>Daftar buku</h3><div id="adminBooks"></div></div></div>
 <div class="toast" id="toast"></div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+// Motion layer: scroll reveals and gentle pointer depth. No external animation dependency.
+(function(){
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce)return;
+  const revealTargets=()=>document.querySelectorAll('.section-head,.quick-card,.book-card,.page-intro,.toolbar,.big-search,.profile-card,.donate-copy,.qr-card,.settings-list,.admin-form,.admin-book-list');
+  const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');io.unobserve(entry.target)}}),{threshold:.08,rootMargin:'0px 0px -35px 0px'});
+  function observe(){revealTargets().forEach((el,i)=>{if(!el.classList.contains('reveal-ready')){el.classList.add('reveal-ready');if(el.classList.contains('book-card'))el.style.transitionDelay=(i%4)*65+'ms'}io.observe(el)})}
+  observe();
+  const mo=new MutationObserver(()=>observe());mo.observe(document.body,{childList:true,subtree:true});
+  document.addEventListener('pointermove',e=>{if(e.pointerType!=='mouse')return;const hero=document.querySelector('.hero-art');if(!hero)return;const r=hero.getBoundingClientRect();if(e.clientX<r.left-80||e.clientX>r.right+80||e.clientY<r.top-80||e.clientY>r.bottom+80)return;const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;hero.style.transform=`translate3d(${x*7}px,${y*7}px,0)`},{passive:true});
+  document.addEventListener('pointerleave',()=>{const hero=document.querySelector('.hero-art');if(hero)hero.style.transform=''},true);
+})();
+
+</script>
 <script>
 // Isi dua nilai ini dari Supabase > Project Settings > API Keys.
 // Gunakan Project URL dan Publishable key (sb_publishable_...). Jangan gunakan Secret key.
@@ -56,7 +112,7 @@ let books=[];
 let supabaseClient=null;
 let currentAdmin=null;
 
-function go(page){$$(".page").forEach(p=>p.classList.toggle("active",p.id==="page-"+page));$$(".nav-item").forEach(b=>b.classList.toggle("active",b.dataset.page===page));$("#topTitle").textContent=pages[page]||"PustakaKu";window.scrollTo({top:0,behavior:"smooth"});if(page==="catalog")renderCatalog();if(page==="home")renderHome()}
+function go(page){window.dispatchEvent(new CustomEvent("pustaka:scene",{detail:page}));$$(".page").forEach(p=>p.classList.toggle("active",p.id==="page-"+page));$$(".nav-item").forEach(b=>b.classList.toggle("active",b.dataset.page===page));$("#topTitle").textContent=pages[page]||"PustakaKu";window.scrollTo({top:0,behavior:"smooth"});if(page==="catalog")renderCatalog();if(page==="home")renderHome()}
 $$("[data-page]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.page)));
 $$("[data-goto]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.goto)));
 $("#today").textContent=new Intl.DateTimeFormat("id-ID",{weekday:"short",day:"numeric",month:"short"}).format(new Date());
@@ -73,8 +129,8 @@ function renderCatalog(){let q=($("#catalogFilter").value||"").toLowerCase();let
 $("#catalogFilter").addEventListener("input",renderCatalog);
 $("#globalSearch").addEventListener("input",e=>{let q=e.target.value.toLowerCase();let filtered=books.filter(b=>(b.title+" "+(b.author||"")).toLowerCase().includes(q));$("#searchResults").innerHTML=q?filtered.map(card).join(""):"";$("#searchHint").classList.toggle("hidden",!!q);if(q&&!filtered.length)$("#searchResults").innerHTML='<div class="empty" style="grid-column:1/-1">Buku tidak ditemukan.</div>'});
 
-function showAdminModal(){$("#adminModal").classList.remove("hidden")}
-$("#adminOpen").onclick=showAdminModal;$("#settingsAdmin").onclick=showAdminModal;$("#closeAdmin").onclick=()=>$("#adminModal").classList.add("hidden");
+function showAdminModal(){window.dispatchEvent(new CustomEvent("pustaka:scene",{detail:"login"}));$("#adminModal").classList.remove("hidden")}
+$("#adminOpen").onclick=showAdminModal;$("#settingsAdmin").onclick=showAdminModal;$("#closeAdmin").onclick=()=>{$("#adminModal").classList.add("hidden");const active=document.querySelector(".page.active");window.dispatchEvent(new CustomEvent("pustaka:scene",{detail:active?.id?.replace("page-","")||"home"}))};
 async function verifyAdmin(user){
   const {data,error}=await supabaseClient.from("admin_users").select("user_id").eq("user_id",user.id).maybeSingle();
   if(error){console.error(error);return false}
@@ -85,6 +141,7 @@ async function updateSession(){
   currentAdmin=null;
   if(session?.user && await verifyAdmin(session.user)){
     currentAdmin=session.user;
+    window.dispatchEvent(new CustomEvent("pustaka:scene",{detail:"admin"}));
     $("#adminPanel").classList.remove("hidden");
     return true;
   }
@@ -101,16 +158,57 @@ $("#adminLogin").onclick=async()=>{
   if(!await verifyAdmin(data.user)){
     await supabaseClient.auth.signOut();toast("Akun ini belum terdaftar sebagai administrator");$("#adminLogin").disabled=false;return;
   }
-  currentAdmin=data.user;$("#adminModal").classList.add("hidden");$("#adminPanel").classList.remove("hidden");$("#adminPassword").value="";await loadBooks();toast("Berhasil masuk sebagai administrator");$("#adminLogin").disabled=false;
+  currentAdmin=data.user;window.dispatchEvent(new CustomEvent("pustaka:scene",{detail:"admin"}));$("#adminModal").classList.add("hidden");$("#adminPanel").classList.remove("hidden");$("#adminPassword").value="";await loadBooks();toast("Berhasil masuk sebagai administrator");$("#adminLogin").disabled=false;
 };
-$("#adminLogout").onclick=async()=>{await supabaseClient.auth.signOut();currentAdmin=null;$("#adminPanel").classList.add("hidden");toast("Kamu sudah keluar")};
+$("#adminLogout").onclick=async()=>{await supabaseClient.auth.signOut();currentAdmin=null;window.dispatchEvent(new CustomEvent("pustaka:scene",{detail:"home"}));$("#adminPanel").classList.add("hidden");toast("Kamu sudah keluar")};
 
 $("#bookForm").addEventListener("submit",async e=>{
-  e.preventDefault();if(!currentAdmin){toast("Silakan login sebagai admin");return}
-  const book={title:$("#bookTitle").value.trim(),author:$("#bookAuthor").value.trim(),url:$("#bookUrl").value.trim(),cover:$("#bookCover").value.trim()||null};
-  const {error}=await supabaseClient.from("books").insert([book]);
-  if(error){console.error(error);toast("Gagal menambahkan buku. Periksa izin database.");return}
-  e.target.reset();await loadBooks();toast("Buku berhasil ditambahkan ke katalog")
+  e.preventDefault();
+  if(!currentAdmin){toast("Silakan login sebagai admin");return}
+  const title=$("#bookTitle").value.trim();
+  const author=$("#bookAuthor").value.trim();
+  const suppliedUrl=$("#bookUrl").value.trim();
+  const file=$("#bookFile").files[0];
+  const cover=$("#bookCover").value.trim()||null;
+  if(!suppliedUrl&&!file){toast("Masukkan URL buku atau pilih file PDF");return}
+  if(suppliedUrl&&file){toast("Pilih URL atau upload PDF, jangan keduanya");return}
+  if(file){
+    const isPdf=file.type==="application/pdf"||file.name.toLowerCase().endsWith(".pdf");
+    if(!isPdf){toast("File harus berformat PDF");return}
+    if(file.size>50*1024*1024){toast("Ukuran PDF maksimal 50 MB");return}
+  }
+  const button=$("#addBookButton");
+  button.disabled=true;button.textContent=file?"Mengunggah PDF...":"Menyimpan buku...";
+  let uploadedPath=null;
+  try{
+    let bookUrl=suppliedUrl;
+    if(file){
+      const safeBase=file.name.replace(/[^a-zA-Z0-9._-]/g,"-").replace(/-+/g,"-");
+      uploadedPath=`${currentAdmin.id}/${crypto.randomUUID()}-${safeBase}`;
+      const {error:uploadError}=await supabaseClient.storage.from("buku-pdf").upload(uploadedPath,file,{
+        cacheControl:"3600",upsert:false,contentType:"application/pdf"
+      });
+      if(uploadError)throw uploadError;
+      const {data:publicData}=supabaseClient.storage.from("buku-pdf").getPublicUrl(uploadedPath);
+      bookUrl=publicData.publicUrl;
+    }
+    const {error:insertError}=await supabaseClient.from("books").insert([{
+      title,author,url:bookUrl,cover
+    }]);
+    if(insertError)throw insertError;
+    e.target.reset();
+    await loadBooks();
+    toast(file?"PDF berhasil diunggah dan buku ditambahkan":"Buku berhasil ditambahkan ke katalog");
+  }catch(error){
+    console.error(error);
+    if(uploadedPath){
+      const {error:cleanupError}=await supabaseClient.storage.from("buku-pdf").remove([uploadedPath]);
+      if(cleanupError)console.error("Gagal membersihkan file upload yang tidak tersimpan:",cleanupError);
+    }
+    toast(error?.message?`Gagal menyimpan buku: ${error.message}`:"Gagal mengunggah atau menyimpan buku. Periksa Storage Policies dan izin database.");
+  }finally{
+    button.disabled=false;button.innerHTML='Tambah ke katalog <span>＋</span>';
+  }
 });
 function renderAdmin(){
   if(!currentAdmin){$("#adminBooks").innerHTML='<div class="muted">Masuk sebagai administrator untuk mengelola buku.</div>';return}
@@ -118,8 +216,18 @@ function renderAdmin(){
   $$('[data-del]').forEach(btn=>btn.onclick=async()=>{
     if(!currentAdmin)return;
     if(!confirm("Hapus buku ini dari katalog?"))return;
+    const targetBook=books.find(b=>String(b.id)===String(btn.dataset.del));
     const {error}=await supabaseClient.from("books").delete().eq("id",btn.dataset.del);
     if(error){console.error(error);toast("Gagal menghapus buku");return}
+    if(targetBook?.url){
+      const marker="/storage/v1/object/public/buku-pdf/";
+      const markerIndex=targetBook.url.indexOf(marker);
+      if(markerIndex!==-1){
+        const objectPath=decodeURIComponent(targetBook.url.slice(markerIndex+marker.length));
+        const {error:removeError}=await supabaseClient.storage.from("buku-pdf").remove([objectPath]);
+        if(removeError)console.error("Buku terhapus dari katalog, tetapi file Storage gagal dihapus:",removeError);
+      }
+    }
     await loadBooks();toast("Buku berhasil dihapus")
   });
 }
@@ -132,4 +240,103 @@ if(!window.supabase || SUPABASE_URL.includes("PASTE_") || SUPABASE_PUBLISHABLE_K
   (async()=>{await loadBooks();await updateSession()})();
 }
 </script>
+
+<script type="module">
+(async()=>{
+  const wrap=document.getElementById('threeVisual'), canvas=document.getElementById('threeCanvas'), caption=document.getElementById('threeCaption');
+  if(!wrap||!canvas)return;
+  try{
+    const THREE=await import('https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js');
+    const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true,powerPreference:'low-power'});
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.65));
+    renderer.setClearColor(0x000000,0);
+    renderer.outputColorSpace=THREE.SRGBColorSpace;
+    renderer.toneMapping=THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure=1.18;
+    const scene=new THREE.Scene();
+    const camera=new THREE.PerspectiveCamera(34,1,.1,100);camera.position.set(0,0,8.8);
+    scene.add(new THREE.AmbientLight(0xb9c8ff,1.45));
+    const key=new THREE.DirectionalLight(0xffffff,3.0);key.position.set(4,5,7);scene.add(key);
+    const cyan=new THREE.PointLight(0x54e7e1,22,16);cyan.position.set(-3,-1,4);scene.add(cyan);
+    const violet=new THREE.PointLight(0x9b79ff,24,15);violet.position.set(3,2,3);scene.add(violet);
+    const root=new THREE.Group();scene.add(root);
+    const mats={
+      violet:new THREE.MeshStandardMaterial({color:0x8873ed,metalness:.48,roughness:.28}),
+      lilac:new THREE.MeshStandardMaterial({color:0xc6baff,metalness:.24,roughness:.34}),
+      cyan:new THREE.MeshStandardMaterial({color:0x5bded9,metalness:.55,roughness:.24}),
+      pink:new THREE.MeshStandardMaterial({color:0xef8fbd,metalness:.35,roughness:.3}),
+      navy:new THREE.MeshStandardMaterial({color:0x202c51,metalness:.45,roughness:.3}),
+      paper:new THREE.MeshStandardMaterial({color:0xf0e8d8,metalness:.05,roughness:.78}),
+      gold:new THREE.MeshStandardMaterial({color:0xe4c27b,metalness:.72,roughness:.24}),
+      dark:new THREE.MeshStandardMaterial({color:0x172039,metalness:.35,roughness:.4})
+    };
+    const book=(x,y,z,scale=1,cover=mats.violet,rot=0)=>{
+      const g=new THREE.Group();
+      const pages=new THREE.Mesh(new THREE.BoxGeometry(1.55,.18,2.05),mats.paper);pages.position.z=.03;g.add(pages);
+      const front=new THREE.Mesh(new THREE.BoxGeometry(1.62,.10,2.12),cover);front.position.y=-.13;g.add(front);
+      const back=new THREE.Mesh(new THREE.BoxGeometry(1.62,.10,2.12),cover);back.position.y=.13;g.add(back);
+      const spine=new THREE.Mesh(new THREE.BoxGeometry(.14,.28,2.12),mats.gold);spine.position.x=-.79;g.add(spine);
+      for(let i=0;i<3;i++){const line=new THREE.Mesh(new THREE.BoxGeometry(.76,.012,.025),mats.gold);line.position.set(.12,-.186,.55-i*.15);g.add(line)}
+      g.position.set(x,y,z);g.scale.setScalar(scale);g.rotation.set(.12,rot,.16);return g;
+    };
+    const add=(obj)=>{root.add(obj);return obj};
+    const clear=()=>{while(root.children.length){const o=root.children[0];root.remove(o);o.traverse?.(n=>{if(n.geometry)n.geometry.dispose()})}};
+    const cylinder=(r1,r2,h,mat,x,y,z,rotZ=0)=>{const m=new THREE.Mesh(new THREE.CylinderGeometry(r1,r2,h,48),mat);m.position.set(x,y,z);m.rotation.z=rotZ;return m};
+    function makeScene(name){
+      clear();let title='PUSTAKAKU · 3D LIBRARY';
+      if(name==='home'){
+        title='BERANDA · KNOWLEDGE IN MOTION';
+        add(book(-.2,0,0,1.35,mats.violet,-.38));add(book(.95,-.95,-.8,.72,mats.cyan,.34));
+        const ring=new THREE.Mesh(new THREE.TorusGeometry(2.15,.018,10,100),new THREE.MeshBasicMaterial({color:0x76e6df,transparent:true,opacity:.58}));ring.rotation.x=1.1;ring.rotation.y=.3;add(ring);
+      }else if(name==='catalog'){
+        title='KATALOG · THE BOOK COLLECTION';
+        for(let i=0;i<7;i++){const b=book(-2.15+i*.72,Math.sin(i*.8)*.22,-.2,.48,[mats.violet,mats.cyan,mats.pink,mats.navy,mats.lilac][i%5],(i-3)*.055);b.rotation.z=(i%2?-.08:.08);add(b)}
+        const shelf=new THREE.Mesh(new THREE.BoxGeometry(5.5,.18,2.5),mats.gold);shelf.position.set(0,-1.35,-.35);add(shelf);
+      }else if(name==='search'){
+        title='PENCARIAN · DISCOVER A BOOK';
+        add(book(-.45,-.65,-.4,.95,mats.cyan,.28));
+        const lens=new THREE.Mesh(new THREE.TorusGeometry(.85,.105,20,64),mats.lilac);lens.position.set(.8,.75,.8);add(lens);
+        const glass=new THREE.Mesh(new THREE.CircleGeometry(.72,48),new THREE.MeshPhysicalMaterial({color:0x79dfe7,transparent:true,opacity:.16,roughness:.08,metalness:.15}));glass.position.set(.8,.75,.72);add(glass);
+        const handle=cylinder(.11,.14,1.45,mats.gold,1.52,-.05,.8,-.72);add(handle);
+      }else if(name==='profile'){
+        title='PROFIL · THE READING SPACE';
+        add(book(-.3,-1.1,-.25,1.0,mats.pink,-.12));add(book(.6,-.55,-.65,.72,mats.violet,.2));
+        const bust=new THREE.Group();const torso=new THREE.Mesh(new THREE.SphereGeometry(.62,32,24),mats.cyan);torso.scale.set(1.05,1.12,.62);torso.position.y=.15;bust.add(torso);
+        const head=new THREE.Mesh(new THREE.SphereGeometry(.38,32,24),mats.lilac);head.position.y=1.02;bust.add(head);bust.position.set(.1,.2,.35);add(bust);
+      }else if(name==='support'){
+        title='DUKUNGAN · SHARE THE KNOWLEDGE';
+        add(book(-.7,-.9,-.25,.85,mats.violet,-.22));add(book(.65,-.9,-.35,.85,mats.cyan,.22));
+        const shape=new THREE.Shape();shape.moveTo(0,-.55);shape.bezierCurveTo(-1.45,.3,-.8,1.35,0,.65);shape.bezierCurveTo(.8,1.35,1.45,.3,0,-.55);
+        const heart=new THREE.Mesh(new THREE.ExtrudeGeometry(shape,{depth:.28,bevelEnabled:true,bevelSegments:4,steps:1,bevelSize:.09,bevelThickness:.09}),mats.pink);heart.position.set(0,.4,.35);heart.scale.set(.82,.82,.82);add(heart);
+      }else if(name==='settings'){
+        title='PENGATURAN · READING EXPERIENCE';
+        add(book(-.45,-.95,-.3,.9,mats.cyan,.18));
+        const gear=new THREE.Group();const tor=new THREE.Mesh(new THREE.TorusGeometry(.92,.22,16,48),mats.lilac);gear.add(tor);
+        const hub=new THREE.Mesh(new THREE.CylinderGeometry(.36,.36,.28,40),mats.gold);hub.rotation.x=Math.PI/2;gear.add(hub);
+        for(let i=0;i<10;i++){const tooth=new THREE.Mesh(new THREE.BoxGeometry(.32,.38,.34),mats.violet);const a=i*Math.PI/5;tooth.position.set(Math.cos(a)*1.08,Math.sin(a)*1.08,0);tooth.rotation.z=a;gear.add(tooth)}
+        gear.position.set(.65,.55,.25);add(gear);
+      }else if(name==='login'||name==='admin'){
+        title=name==='admin'?'ADMIN · LIBRARY MANAGEMENT':'ADMIN ACCESS · SECURE LIBRARY';
+        add(book(-.7,-.75,-.4,.82,mats.violet,-.3));add(book(.45,-.95,-.6,.7,mats.cyan,.18));
+        const tray=new THREE.Mesh(new THREE.BoxGeometry(2.7,.16,1.2),mats.dark);tray.position.set(.1,-1.55,.1);add(tray);
+        const arrow=new THREE.Group();const shaft=new THREE.Mesh(new THREE.BoxGeometry(.16,1.1,.16),mats.gold);arrow.add(shaft);shaft.position.y=.15;
+        const head=new THREE.Mesh(new THREE.ConeGeometry(.38,.58,4),mats.cyan);head.rotation.z=Math.PI;head.position.y=.82;arrow.add(head);arrow.position.set(1.35,.1,.65);add(arrow);
+      }
+      caption.textContent=title;
+      root.position.set(0,0,0);
+    }
+    const particles=new THREE.Group();
+    for(let i=0;i<46;i++){const m=new THREE.Mesh(new THREE.SphereGeometry(.018+(i%3)*.008,8,8),new THREE.MeshBasicMaterial({color:i%2?0x77e3df:0xb8a5ff,transparent:true,opacity:.65}));m.position.set((Math.random()-.5)*7,(Math.random()-.5)*5,(Math.random()-.5)*2);particles.add(m)}scene.add(particles);
+    function resize(){const r=wrap.getBoundingClientRect();const w=Math.max(1,r.width),h=Math.max(1,r.height);renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()}
+    new ResizeObserver(resize).observe(wrap);resize();
+    let current='home';makeScene(current);
+    window.addEventListener('pustaka:scene',e=>{const n=e.detail||'home';if(n!==current){current=n;makeScene(current)}});
+    let px=0,py=0;window.addEventListener('pointermove',e=>{px=(e.clientX/innerWidth-.5)*.28;py=(e.clientY/innerHeight-.5)*.18},{passive:true});
+    const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;const clock=new THREE.Clock();
+    function animate(){requestAnimationFrame(animate);if(document.hidden)return;const t=clock.getElapsedTime();if(!reduce){root.rotation.y+=(px-root.rotation.y)*.025;root.rotation.x+=(-py-root.rotation.x)*.025;root.position.y=Math.sin(t*.7)*.09;particles.rotation.y=t*.035;particles.rotation.x=Math.sin(t*.18)*.08;}renderer.render(scene,camera)}animate();
+
+  }catch(err){console.warn('Three.js tidak dapat dimuat; tampilan dekoratif CSS tetap aktif.',err);wrap.classList.add('three-unavailable');caption.textContent='PUSTAKAKU · DIGITAL LIBRARY'}
+})();
+</script>
+
 </body></html>
